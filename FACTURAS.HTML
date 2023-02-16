@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Facturador</title>
+        <script src="facturas.js"></script>
+        <link rel="stylesheet" href="./facturas.css">
+    </head>
+    <body>
+        <ul>
+            <li><a onclick="obtenerBodegas()">Bodegas</a></li>
+            <li><a onclick="obtenerFacturas()">Facturas</a></li>
+            <li><a onclick="obtenerProductos()">Productos</a></li>
+          </ul>
+
+        <!--PArte-->
+       
+        <div id="titlediv">
+            <h1 id="title"></h1>
+        </div>
+        
+        <div id="opciones">
+            <button id="nuevo" style="background-color: #27ec15; color: white;  padding: 5px;
+            align-items: center; border-radius: 10px; display: none;"><img src="./assets/add.png" style="margin: 5px;" width="20px">  Agregar</button>
+            <div id="nuevaBodega" style="display: none;">
+                <input id="nombreBodega" placeholder="nombre">
+                <input id="direccion" placeholder="direccion">
+                <button onclick="guardarBodega()" id="guardar">Guardar</button>
+            </div>
+            <div id="nuevaFactura" style="display: none;">
+                <input id="totalFactura" placeholder="total">
+                <button onclick="guardarFactura()" id="guardar">Guardar</button>
+            </div>
+            <div id="nuevoProducto" style="display: none;">
+                <input id="nombreProducto" placeholder="nombre">
+                <input id="descripcionProducto" placeholder="descripcion">
+                <input id="precioProducto" placeholder="precio" type="number">
+                <button onclick="guardarProducto()" id="guardar">Guardar</button>
+            </div>
+        </div>
+        <div id="info">
+           
+        </div>
+        
+        
+        
+    </body>
+</html>
